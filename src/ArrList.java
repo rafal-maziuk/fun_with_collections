@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ArrList {
@@ -24,6 +25,8 @@ public class ArrList {
         System.out.println("contains?");
         System.out.println(list.contains("dwa"));       // true
         System.out.println(list.contains("zero"));      // false
+
+        Collections.sort(list);     // sortowanie, korzystamy z COLLECTIONS !!!
 
         for (String name : list) {      // foreach
             System.out.println(name);
