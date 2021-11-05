@@ -6,9 +6,10 @@ public class Main {
 
     public static void main(String[] args) {
 
+        boolean shouldContinue = true;
         Scanner scanner = new Scanner(System.in);
 
-        while (true){
+        while (shouldContinue){
             System.out.println("choose option: ");
             System.out.println("1. show guests");
             System.out.println("2. add guest");
@@ -23,7 +24,7 @@ public class Main {
                 case 2 -> System.out.println("wybrano 2");
                 case 3 -> System.out.println("wybrano 3");
                 case 4 -> System.out.println("wybrano 4");
-                case 5 -> System.out.println("wybrano 5");
+                case 5 -> shouldContinue = false;
             }
         }
     }
