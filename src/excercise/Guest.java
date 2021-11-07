@@ -33,8 +33,9 @@ public class Guest {
     public void displayGuestinformation(){
         System.out.println("Name: " + name);
         System.out.println("Meal: " + meal);
-        System.out.println("Phone numbcer: " + phoneNumber);
+        System.out.println("Phone number: " + phoneNumber);
         String isVeganString = isVegan ? "yes" : "no";
         System.out.println("Vegan? " + isVeganString);
+        System.out.println();
     }
 }

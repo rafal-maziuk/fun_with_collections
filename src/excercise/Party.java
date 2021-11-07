@@ -45,10 +45,12 @@ public class Party {
     }
 
     public void displayGuestByPhoneNumber(){
+        System.out.println("add phone number: ");
         Integer phoneNumber = Integer.valueOf(scanner.nextLine());
         Guest guest = phoneToGuest.get(phoneNumber);
 
         guest.displayGuestinformation();
+        System.out.println();
     }
 
     public void displayGuests(){
